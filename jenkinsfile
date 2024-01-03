@@ -1,0 +1,10 @@
+ node {
+    stage ('CONTINUES DOWNLOAD')
+{
+git 'https://github.com/zaherpathan/time-tracker.git'
+}
+stage ('CONTINUES BUILD')
+{
+sh 'mvn package'
+}
+}
